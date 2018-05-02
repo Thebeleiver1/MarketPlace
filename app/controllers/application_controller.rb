@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-#to add custom field data to database.
+#to add custom field data from devise to to database.
 before_action :configure_permitted_parameters, if: :devise_controller?
 
   protected
