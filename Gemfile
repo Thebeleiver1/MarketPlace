@@ -6,6 +6,9 @@ ruby '2.5.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 
+# Using carrierwave to upload file
+gem 'carrierwave', '~> 1.0'
+
 # Using devise for authentication and authorization
 gem 'devise'
 

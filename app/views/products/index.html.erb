@@ -25,7 +25,7 @@
         <td><%= product.price %></td>
         <td><%= product.condition %></td>
         <td><%= product.location %></td>
-        <td><%= product.image %></td>
+        <%= image_tag(product.images[0].url) %>
         <td><%= product.category %></td>
         <td><%= product.sellerId %></td>
         <td><%= link_to 'Show', product %></td>
