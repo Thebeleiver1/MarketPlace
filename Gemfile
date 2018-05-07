@@ -6,6 +6,8 @@ ruby '2.5.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 
+#Using sendgrid to send an email
+gem 'sendgrid-ruby'
 # Using carrierwave to upload file
 gem 'carrierwave', '~> 1.0'
 
@@ -38,6 +40,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # use amazon 
 gem 'fog-aws'
+
 gem 'dotenv-rails'
 
 group :development, :test do

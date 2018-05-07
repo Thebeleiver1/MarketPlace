@@ -8,6 +8,14 @@ Rails.application.configure do
 
   #config for devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  ActionMailer::Base.smtp_settings = {
+    :address          => "smtp.sendgrid.net",
+    :port             => "25",
+    :authentication   => :plain,
+    :user_name        => ENV['SENDGRID_USERNAME'],
+    :password         => ENV['SENDGRID_PASSWORD'],
+    :domain           => ENV['SENDGRID_DOMAIN']
+  }
 
   # Do not eager load code on boot.
   config.eager_load = false
