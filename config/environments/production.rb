@@ -56,7 +56,7 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
-  config.action_mailer.default_url_options = { host: 'sataging-toys.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'https://staging-toys.herokuapp.com' }
   ActionMailer::Base.smtp_settings = {
     :address          => "smtp.sendgrid.net",
     :port             => "25",
