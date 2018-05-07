@@ -9,6 +9,6 @@
   <strong>Last name:</strong>
   <%= @user.last_name %>
 </p>
-
+<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

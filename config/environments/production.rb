@@ -56,14 +56,19 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
-  config.action_mailer.default_url_options = { host: 'sataging-toys.herokuapp.com' }
+  
+
+  config.action_mailer.default_url_options = { :host => 'https://staging-toys.herokuapp.com/' }
+  ActionMailer::Base.delivery_method = :smtp
+  
   ActionMailer::Base.smtp_settings = {
-    :address          => "smtp.sendgrid.net",
-    :port             => "25",
+    :address          => 'smtp.sendgrid.net',
+    :port             => '587',
     :authentication   => :plain,
     :user_name        => ENV['SENDGRID_USERNAME'],
     :password         => ENV['SENDGRID_PASSWORD'],
-    :domain           => ENV['SENDGRID_DOMAIN']
+    :domain           => ENV['SENDGRID_DOMAIN'],
+    enable_starttls_auto: true 
   }
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
