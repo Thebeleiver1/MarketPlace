@@ -4,7 +4,15 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    # @products = Product.all
+    # if user_signed_in?
+    #   @p = @products.where(sellerId: current_user.id)
+    # end
+    @products = if params[:user_id] and (params[:user_id] = current_user.try(:id))
+      Product.where(sellerId: params[:user_id])
+    else
+      Product.all
+    end
   end
 
   # GET /products/1
@@ -14,6 +22,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
+    
     @product = Product.new
   end
 
@@ -24,7 +33,9 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
+    #byebug
     @product = Product.new(product_params)
+    @product.sellerId = current_user.id
 
     respond_to do |format|
       if @product.save
