@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
   resources :products
   devise_for :users
-  resources :users do
-    resources :products
-  end
+  resources :users
+
+
+  # resources :users do
+  #michael .....
+  #   resources :products
+  # end
   resources :charges
 
   root 'products#index'

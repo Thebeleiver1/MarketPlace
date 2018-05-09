@@ -5,7 +5,18 @@ $navbar-default-bg: #420217;
     margin-top: 0px;
     padding: 0px;
   }
+
+#navdecoration:hover{
+    color: blue;
+    font-size: 15px;   
+}
+#navdecoration{
+    color:white;
+    font-size: 15px;
+    
+}
 #header{
+    color: white;
     background-color: #4D7298;
     position: relative;
     left: 0;
@@ -13,6 +24,7 @@ $navbar-default-bg: #420217;
     height: 70px;
     text-align: center;
     padding: 5px;
+    letter-spacing: 3px;
 }
 
 #footer {
@@ -24,3 +36,25 @@ $navbar-default-bg: #420217;
     color: white;
     text-align: left;
 }
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: blue;
+    font-size: 16px;
+}
+
+.table{
+    display: inline-block; 
+    float: left;
+    width:230px;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: bold;
+    margin: 3px;
+    
+}
+
