@@ -52,10 +52,9 @@ Preliminary user stories were collected in Trello, with more detailed user stori
 
 ### Preliminary User Stories
 
-![trello](/readmedocs/trello_1.png)
-![trello](/readme_resources/trello_2.png)
-![trello](/readme_resources/trello_3.png)
-![trello](/readme_resources/trello_4.png)
+![trello](readmedocs/ustory.png)
+
+
 
 ### Detailed User Stories
 
@@ -243,15 +242,14 @@ Preliminary user stories were collected in Trello, with more detailed user stori
 The original workflow was conceptualised in the diagram below. Some minor alterations were made during development as needed. These will be reflected in a future version of this diagram.
 
 
-![workflow](/readme_resources/workflow_diagram.png)
+![workflow](/readmedocs/flowchart.png)
 
 ## Style Guide
 
 Colours and fonts were chosen as below.
 
-![colours](/readme_resources/color_scheme.png)
+![colours](/readmedocs/design.png)
 
-![fonts](/readme_resources/Fonts.png)
 
 Gentium Book Basic is set at a slightly heavier weight than Gentium basic, and is used for publishing books at small point sizes.
 
@@ -259,34 +257,24 @@ Open Sans was designed with an upright stress, open forms and a neutral, yet fri
 
 ## Wireframes
 
-Content-first mockups were created using Figma and can be viewed [here](https://www.figma.com/file/cHJ5winPhgKShwLn5E3RRi4l/Preloved-Books-Two-Sided-Marketplace).
+Wire Fraim was made usinf figma https://www.figma.com/file/BeAjfu1eRpS27Gpdzis3sRPQ/Untitled
 
-![mockup](/readme_resources/mockups/1.png)
-![mockup](/readme_resources/mockups/2.png)
-![mockup](/readme_resources/mockups/3.png)
-![mockup](/readme_resources/mockups/4.png)
-![mockup](/readme_resources/mockups/5.png)
-![mockup](/readme_resources/mockups/6.png)
-![mockup](/readme_resources/mockups/7.png)
-![mockup](/readme_resources/mockups/8.png)
-![mockup](/readme_resources/mockups/9.png)
-![mockup](/readme_resources/mockups/10.png)
-![mockup](/readme_resources/mockups/11.png)
-![mockup](/readme_resources/mockups/12.png)
-![mockup](/readme_resources/mockups/13.png)
-![mockup](/readme_resources/mockups/14.png)
+![wireframe](/readmedocs/figma1.png)
+![wireframe](/readmedocs/figma2.png)
+![wireframe](/readmedocs/figma3.png)
+![wireframe](/readmedocs/figma4.png)
+![wireframe](/readmedocs/figma5.png)
 
 
 
 ## ERD
 
-The original conception was as follows:
+It s belongs to and Has many relationship diagram
 
-![erd](/readme_resources/erd_original.png)
+![erd](/readmedocs/database.png)
 
-After revisions necessary for creation of a MVP, the current ERD is as below.
-
-![erd](/readme_resources/erd_current.png)
+Erd designe in Db Designer 
+View https://www.dbdesigner.net/designer
 
 ## Trello
 
@@ -296,5 +284,6 @@ See this project's [Trello board](https://trello.com/b/UHhZI3Xi/online-book-stor
 
 A snapshot at one moment in time is provided below.
 
-![trello](/readme_resources/trello_snapshot_1.png)
-![trello](/readme_resources/trello_snapshot_2.png)
+![trello](readmedocs/trello1.png)
+![trello](/readmedocs/trello2.png)
+![trello](/readmedocs/trello3.png)
