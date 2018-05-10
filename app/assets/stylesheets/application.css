@@ -14,4 +14,12 @@
  *= require_self
  */
 
- 
+ .thank-you{
+    max-width: 100px;
+    color: blue;
+    font-size: 22px;
+}
+
+.charge-table{
+    color: Blue;
+}

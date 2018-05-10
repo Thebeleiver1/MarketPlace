@@ -8,13 +8,25 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>Amount: $<%= user_session[][:price] %> </span>
+    <table class = "charge-table">
+    <tr>
+      <th>
+        <span>Name:    <%= @name %></span>
+      </th>
+    </tr>
+    <td>
+      <span>Amount:   $<%= @amount %></span>
+    </td>
+    </table>
+      
+      
+      
     </label>
   </article>
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="A month's subscription"
-          data-amount = <% user_session[:price] %>
+          data-amount = <%= @amount.to_i * 100%>
           data-locale="auto"></script>
 <% end %>

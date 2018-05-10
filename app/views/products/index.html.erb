@@ -28,7 +28,7 @@
               <%= link_to 'Edit', edit_product_path(product) %> </button></td>
             <% elsif user_signed_in?%>
               <button type="button" class="btn btn-success" >
-                <%= link_to "Buy Now", new_charge_path %>
+                <%= link_to "Buy Now", new_charge_path(product,price: product.price, name: product.name) %>
               </button>
             <% else %>
               <button type="button"  class="btn btn-success">

@@ -1,4 +1,4 @@
-# The Book Place
+# The Toys Store
 
 Completed as Project in [Coder Academy's](https://coderacademy.edu.au/) Fast Track Bootcamp.
 
@@ -28,30 +28,27 @@ View live: https://toys-marketplace.herokuapp.com
 There is a need for a better online store focused on just selling Toys in Australia where buyer can shop for new, old or unused one.
 
 - Why online?
-- Why within Australia
 - What's wrong with the sites that already exist?
 
 
 #### Why online?
-Online shopping cover wider market so there are more buyer and seller. It allows buyer to see photos/videos of a product so they save their time not being phsically there aswell as seller doesn't have go to different marketplace to sell their products.
+Online shopping cover wider market so there are more buyer and seller. It allows buyer to see photos/videos of a product so they save time to not be phsically there aswell as seller doesn't have go to different marketplace to sell their products.
 
 
 #### What's wrong with the sites that already exist?
 There are Website and store who sells toys online. Store who sell only sell brand they associated with and they are new products in high price. Website like ebay and gumtree sell various product and they don't care about any niche market.
 
 
-
-
 ### Solution
 
-Create a better online store which are onl focused on toys which are new and brand associalted with. Here it can be new/old and unused one in one place .
+Create a better online store which are only focused on toys which are new and brand associalted with. Here it can be new/old and unused everything in one place .
 
 
 ## User Stories
 
 User stories were collected in paper and Trello, with more detailed user stories subsequently created.
 
-During the process it was found every user have different viewpoint of browsing website and everybody some stories were distinctive. During this process it also help us to think differently and make a better verion.
+During the process it was found every user have different viewpoint of browsing website and everybody have some stories which were distinctive. During this process it also help us to think differently and make a better verion.
 
 ### Preliminary User Stories
 
@@ -74,8 +71,8 @@ During the process it was found every user have different viewpoint of browsing 
 **Scenario:** User edits profile
 
 - Given I'm a logged in User
-- When I go to the edit profile page for my profile
-- And I change the text in the text fields and/or upload a new profile photo
+- When I go to the edit profile i can see all my info
+- And i should be able to change profile name email id and even change      photo or save with photo.
 - And I click "Update profile"
 - Then I should see my profile page
 - And the details should be updated
@@ -87,6 +84,7 @@ During the process it was found every user have different viewpoint of browsing 
 **Feature:** Unable to edit other user's profile
 - As a User
 - I want nobody other than me to be able to edit my profile
+- i dont want my email id or phone number to be
 - Because I want to have control over my profile details
 
 **Scenario:** User attempts to edit another user's profile
@@ -96,49 +94,49 @@ During the process it was found every user have different viewpoint of browsing 
 
 ---
 
-***User should be able to edit a book listing that is theirs***
+***User should be able to edit a product listing that is theirs***
 
-**Feature:** Edit Book Listing
+**Feature:** Edit Listing
 - As a User
-- I want to edit one of my book listings
-- Because I want to improve the accuracy of my book listing
+- I want to edit/ delete the products i have listed.
+- I should be able to change price and description if i want.
 
-**Scenario:** User edits book listing
+**Scenario:** User edits product listing
 - Given I'm a logged in User
-- When I go to the edit page for a book listing that is mine
-- And I change the text in the text fields and/or upload a new book image
-- And I click "Update book"
-- Then I should see the detailed view page for that book
+- When I go to the edit page 
+- And I change the text in the text fields and/or upload a new image
+- And I click "Update"
+- Then I should see the detailed view page for that products
 - And the details should be updated
 
 ---
 
-***User should not be able to edit a book listing that is not theirs***
+***User should not be able to edit a product listing that is not theirs***
 
-**Feature:** Unable to edit other user's book listing
+**Feature:** Unable to edit other user's product listing
 - As a User
-- I want nobody other than me to be able to edit my book listings
-- Because I want to have control over my book listings
+- I want nobody other than me to be able to edit my product listings
+- Because I want to have control over my product listings
 
-**Scenario:** User attempts to edit another user's book listing
+**Scenario:** User attempts to edit another user's product listing
 - Given I'm a logged in User
-- When I go to the edit book page for another user's book listing
-- Then I am redirected back to the detailed view page for that book listing
+- When I go to the edit product page for another user's product listing
+- Then I am redirected back to the detailed view page for that product listing
 
 ---
 
-***User should be able to delete a book listing that is theirs***
+***User should be able to delete a product listing that is theirs***
 
-**Feature:** Delete Book Listing
+**Feature:** Delete product Listing
 - As a User
-- I want to delete one of my book listings
+- I want to delete one of my product listings
 - Because I have decided not to sell it
 
-**Scenario:** User deletes book listing
+**Scenario:** User deletes product listing
 - Given I'm a logged in User
-- When I go to the edit page for a book listing that is mine
-- And I click 'delete book'
-- Then the book listing should be deleted from the database
+- When I go to the edit page for a product listing that is mine
+- And I click 'delete product'
+- Then the product listing should be deleted from the database
 
 ---
 
@@ -171,31 +169,31 @@ During the process it was found every user have different viewpoint of browsing 
 
 ---
 
-***User should be able to view book listings on homepage without logging in***
+***User should be able to view product listings on homepage without logging in***
 
 **Feature:** Homepage viewable without login
 - As a User
-- I want to view book listings without signing in
+- I want to view product listings without signing in
 - Because I want to know it's worth signing up before I do so
 
 **Scenario:** User visits homepage
 - Given I'm a logged out user
 - When I go to the homepage
-- Then I can view the book listings
+- Then I can view the product listings
 
 ---
 
-***User should be able to view detailed book listing without logging in***
+***User should be able to view detailed product listing without logging in***
 
-**Feature:** Detailed book view viewable without login
+**Feature:** Detailed product view viewable without login
 - As a User
-- I want to view book listings without signing in
+- I want to view product listings without signing in
 - Because I want to know it's worth signing up before I do so
 
-**Scenario:** User visits detailed book view page
+**Scenario:** User visits detailed product view page
 - Given I'm a logged out user
-- When I go to the detailed book view page
-- Then I can view the detailed book view page
+- When I go to the detailed product view page
+- Then I can view the detailed product view page
 
 ---
 
@@ -213,16 +211,16 @@ During the process it was found every user have different viewpoint of browsing 
 
 ---
 
-***User should not be able to view New Book form page without logging in***
+***User should not be able to view New product form page without logging in***
 
-**Feature:** User must be logged in to see the add new book form
+**Feature:** User must be logged in to see the add new product form
 - As site Admin
-- I want users to be required to log in in order to add a book listing
+- I want users to be required to log in in order to add a product listing
 - Because I want to encourage users to create an account on the site
 
-**Scenario:** User visits add new book page
+**Scenario:** User visits add new product page
 - Given I'm a logged out user
-- When I go to the add new book page
+- When I go to the add new product page
 - Then I am redirected to the login page
 
 ---
