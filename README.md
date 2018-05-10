@@ -2,7 +2,7 @@
 
 Completed as Project in [Coder Academy's](https://coderacademy.edu.au/) Fast Track Bootcamp.
 
-View live: https://
+View live: https://toys-marketplace.herokuapp.com
 
 **Table of Contents**
   * [Problem Definition and Solution](#problem-definition-and-solution)
@@ -36,28 +36,14 @@ Online shopping cover wider market so there are more buyer and seller. It allows
 
 
 #### What's wrong with the sites that already exist?
+There are Website and store who sells toys online. Store who sell only sell brand they associated with and they are new products in high price. Website like ebay and gumtree sell various product and they don't care about any niche market.
 
-Having already justified a need for an Australian-based two-sided marketplace for preloved books, below is a detailed overview of existing sites selling preloved books within Australia, and why a better solution is needed.
 
-While there are a number of preloved bookshops in existance within Australia,
 
-- they have a physical presence (not online-only)
-- they're not a two-sided marketplace, they are one store selling the books
-
-Places do exist for selling preloved books person-to-person online (e.g. Ebay, Gumtree, Fishpond, Amazon), but they're not made specifically for books. The exception to this is several sites made specifically for the buying and selling of textbooks ([Student VIP](https://studentvip.com.au/textbooks); [Dusa Bookshop](http://www.dusabookshop.com.au/2nd-hand-books); [MQ Bookshop](http://www.mqbooks.org/cgi-bin/bookex/bookex.cgi); [Zookal](https://www.zookal.com/)).
-
-One website can be found that has the same premise as this one - an Australian two-sided marketplace for preloved books ([BookEMart](https://books.thebookemart.com/)), however it could be improved in a number of areas:
-
-- Improve overall look of site to be more modern and aesthetically pleasing by following modern design principles
-- Improve ease of navigation
-- Reduce barrier to entry (enable viewing of books prior to signing up)
-- Reduce or eliminate ads, or make them less obtrusive
-- Make it exclusively Australian, so that users do not need to worry about whether the books they are looking at are coming from overseas
-- Use a database for adding books to increase accuracy of book listing as well as increase ease of use for sellers
 
 ### Solution
 
-Create a better online store which are onl focused on toys that can be new/old and unused one.
+Create a better online store which are onl focused on toys which are new and brand associalted with. Here it can be new/old and unused one in one place .
 
 
 ## User Stories
@@ -66,10 +52,10 @@ Preliminary user stories were collected in Trello, with more detailed user stori
 
 ### Preliminary User Stories
 
-![trello](/readme_resources/trello/trello_1.png)
-![trello](/readme_resources/trello/trello_2.png)
-![trello](/readme_resources/trello/trello_3.png)
-![trello](/readme_resources/trello/trello_4.png)
+![trello](/readmedocs/trello_1.png)
+![trello](/readme_resources/trello_2.png)
+![trello](/readme_resources/trello_3.png)
+![trello](/readme_resources/trello_4.png)
 
 ### Detailed User Stories
 
@@ -79,8 +65,8 @@ Preliminary user stories were collected in Trello, with more detailed user stori
 **Feature:** Edit Profile
 
 - As a User
-- I want to edit my profile
-- Because I want to keep my details up to date
+- I want to edit/ delete  my profile
+
 
 **Scenario:** User edits profile
 
