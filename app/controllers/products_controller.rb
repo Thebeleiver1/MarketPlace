@@ -73,8 +73,26 @@ class ProductsController < ApplicationController
   end
 
   
-  def newlisting
+  def newlisting 
     @products = Product.where(condition: :New)
+    #@products = Product.find(params[:product])
+  end
+
+  def unusedlisting 
+    @products = Product.where(condition: :Unused)
+    #@products = Product.find(params[:product])
+  end
+
+  def oldlisting 
+    @products = Product.where(condition: :Old)
+    #@products = Product.find(params[:product])
+  end
+
+  def userlisting 
+    
+    @products = Product.all
+    
+    
   end
   
 

@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <h2>Products</h2>
+  <div class="table-responsive">          
+  
+    
+    
+    <% @products.each do |product| %>
+    <% if user_signed_in? and (product.sellerId == current_user.id)%>
+    <table class="table">
+      <thead> 
+        
+        <tr>
+          <td><%= image_tag(product.images[0].url,style: 'height:100px;width:150px;' )%></td>
+        </tr>
+        <tr>
+          <td><%= product.name %></td>
+          <td><%= product.condition %></td>
+        </tr>
+        <tr>
+          <td><%= product.price %></td>
+          
+        </tr>
+        <tr>
+          <td>
+            
+              <button type="button" class="btn btn-warning">
+              <%= link_to 'Edit', edit_product_path(product) %> </button>
+        </td>
+        </tr>
+        <tr>
+        <td>
+              <button type="button" class="btn btn-danger">
+                <%= link_to "Delete", product, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </button>
+        </td>
+        </tr>
+            
+          
+        </tr>
+        
+      </thead>
+    </table>
+    <% end %>
+    <% end %>
+    
+
+    
+  
+  </div>
+</div>

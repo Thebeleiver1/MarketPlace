@@ -15,8 +15,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><%= link_to "New",product_newlisting_path %></li>
-        <li><%= link_to "Unused", users_path %></li>
-        <li><%= link_to "Old", users_path %></li>
+        <li><%#= link_to "Unused",{:controller => "products",:action => "newlisting",:condition => :New}%></li>
+        <li><%= link_to "Unused",product_unusedlisting_path %></li>
+        <li><%= link_to "Old", product_oldlisting_path %></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -27,7 +28,7 @@
           <ul class="dropdown-menu">
             <li><%= link_to "Post Ad", new_product_path %></li>
             <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
-            <li><%= link_to "View Listing", root_path %></li>
+            <li><%= link_to "View Listing", product_userlisting_path %></li>
             <li role="separator" class="divider"></li>
             <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
             
