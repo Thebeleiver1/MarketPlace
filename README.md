@@ -19,6 +19,7 @@ View live: https://toys-marketplace.herokuapp.com
   * [Wireframes](#wireframes)
   * [ERD](#erd)
   * [Trello](#trello)
+  * [Whats Future](#future)
 
 ## Problem Definition and Solution
 
@@ -48,9 +49,12 @@ Create a better online store which are onl focused on toys which are new and bra
 
 ## User Stories
 
-Preliminary user stories were collected in Trello, with more detailed user stories subsequently created.
+User stories were collected in paper and Trello, with more detailed user stories subsequently created.
+
+During the process it was found every user have different viewpoint of browsing website and everybody some stories were distinctive. During this process it also help us to think differently and make a better verion.
 
 ### Preliminary User Stories
+
 
 ![trello](readmedocs/ustory.png)
 
@@ -251,13 +255,15 @@ Colours and fonts were chosen as below.
 ![colours](/readmedocs/design.png)
 
 
-Gentium Book Basic is set at a slightly heavier weight than Gentium basic, and is used for publishing books at small point sizes.
+Color were choosed to make more simple to make more kids and family friendly and keeping in the mind for the visibility purpose.
+
+Google fonts were choose to make website looks better and the fonts which are easier to use and looks attractive at the same time.
 
 Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimised for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.
 
 ## Wireframes
 
-Wire Fraim was made usinf figma https://www.figma.com/file/BeAjfu1eRpS27Gpdzis3sRPQ/Untitled
+Wire Fraim was made using figma https://www.figma.com/file/BeAjfu1eRpS27Gpdzis3sRPQ/Untitled
 
 ![wireframe](/readmedocs/figma1.png)
 ![wireframe](/readmedocs/figma2.png)
@@ -278,12 +284,16 @@ View https://www.dbdesigner.net/designer
 
 ## Trello
 
-Trello was used from the beginning of this project to track ideas and tasks, as well as completion dates.
+Trello was used for project management and to track the workflow and things were done according to their importance.
 
-See this project's [Trello board](https://trello.com/b/UHhZI3Xi/online-book-store) for details.
+See this project's [Trello board]https://trello.com/b/cBeUpozq/two-side-market-place?menu=filter&filter=label:yellow,label:nonefor details.
 
-A snapshot at one moment in time is provided below.
+Images of different faces of project
 
 ![trello](readmedocs/trello1.png)
 ![trello](/readmedocs/trello2.png)
 ![trello](/readmedocs/trello3.png)
+
+## future
+
+This is now as a beta and a testing version which will have many more future for buyers and sellers and more secure. Users can design the page they like as their own store. There will be association with courrier company which will seller for cheaper and reliable delivery at the same time user will also benefit from it. This site will be soley focused related to kids.
