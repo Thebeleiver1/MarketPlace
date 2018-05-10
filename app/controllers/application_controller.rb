@@ -10,6 +10,11 @@ before_action :configure_permitted_parameters, if: :devise_controller?
   # saving from fake users
   #protect_from_forgery with: :exception
 
+  helper_method :admin?
+  
+  def admin?
+    current_user.email == "punyachapagain@gmail.com"
+  end
 
 
 end

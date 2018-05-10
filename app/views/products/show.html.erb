@@ -1,44 +1,67 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+      
+<div class="container-fluid new-products" >    
+<div class="row">
+	
+              
+            
+    <div class="col-sm-4">
+    	<div class="row-sm-9">
+      				
+        <%= link_to image_tag(@product.images[0].url,class: "style-image1"), @product.images[0].url %>
+    	</div>
+        <div class="row-sm" >
+              <% @product.images.each do | image|%>
+                  <%=link_to image_tag(image.url,class: "style-image"),image.url,target: "_blank", alt: "image"%>
+                  
+                  
+                  
+              <% end %>
+              <%= @a%>
+    </div>
+    	
+    </div>
+  
+     <div class="col-sm-4">
+            
+            <div class="row-xs  product-display" >
+                Name: <%= @product.name %>
+            </div>
+            <div class="row-xs  product-display" >
+              Description:  <%= @product.description%>
+            </div>
+            <div class="row-xs  product-display" >
+              Located at: <%= @product.location %> 
+            </div>
+            <div class="row-xs  product-display" >
+              Conditon: <%= @product.condition %>
+            </div>
+            <div class="row-xs  product-display" >
+              Price: <%= @product.price %> 
+            </div>
+            <div class="row-xs  product-display" >
+              Category: <%= @product.category %>
+            </div>
+            <div class="row-xs  product-display" >
+            <% if user_signed_in? and (@product.sellerId == current_user.id)%>
+              <button type="button" class="btn btn-warning">
+              <%= link_to 'Edit', edit_product_path(@product) %> </button>
+            <% else %>
+              <button type="button" class="btn btn-success">Buy Now</button>
+            <% end %>
+            </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+      
+  		</div>
+      
+    </div>
+  <button type="button" class="btn btn-primary"><%= link_to 'Back', products_path %></button></td>
+  </div>
+  </div>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+  
 
-<p>
-  <strong>Condition:</strong>
-  <%= @product.condition %>
-</p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @product.location %>
-</p>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag(@product.images[0].url) %>
-</p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @product.category %>
-</p>
-
-<p>
-  <strong>Sellerid:</strong>
-  <%= @product.sellerId %>
-</p>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
