@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   #   resources :products
   # end
   resources :charges
-
+  
   root 'products#index'
   get 'product/newlisting', to: 'products#newlisting'
   get 'product/unusedlisting', to: 'products#unusedlisting'

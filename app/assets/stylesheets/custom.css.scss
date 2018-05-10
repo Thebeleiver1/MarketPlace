@@ -29,9 +29,9 @@ $navbar-default-bg: #420217;
 
 #footer {
     position: fixed;
-    left: 0;
-    bottom: 0;
+    top: 97%;
     width: 100%;
+    min-height:50px;
     background-color: #77ACB6;
     color: white;
     text-align: left;

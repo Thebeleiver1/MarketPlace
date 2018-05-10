@@ -14,3 +14,7 @@
 //= require rails-ujs
 //= require bootstrap-sprockets
 //= require_tree .
+
+function myFunction() {
+    console.log = "punya how are you"
+  }

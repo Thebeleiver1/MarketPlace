@@ -16,5 +16,10 @@ before_action :configure_permitted_parameters, if: :devise_controller?
     current_user.email == "punyachapagain@gmail.com"
   end
 
+  def add_cart
+    
+
+  end
+
 
 end
