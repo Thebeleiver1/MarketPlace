@@ -8,11 +8,27 @@ class ProductsController < ApplicationController
     # if user_signed_in?
     #   @p = @products.where(sellerId: current_user.id)
     # end
-    @products = if params[:user_id] and (params[:user_id] = current_user.try(:id))
-      Product.where(sellerId: params[:user_id])
+    #byebug
+    if params[:val] == nil
+      @products = Product.all
+    elsif params[:val] == "New"
+      @products = Product.where(condition: params[:val])
+    elsif params[:val] == "Old"
+      @products = Product.where(condition: params[:val])
+    elsif params[:val] == "Unused"
+      @products = Product.where(condition: params[:val])
+    #byebug
+    # @products = if params[:user_id] and (params[:user_id] = current_user.try(:id))
+    #   Product.where(sellerId: params[:user_id])
+    elsif params[:val] == "User"
+      
+      @products = Product.where(sellerId: current_user.id)
+
     else
-      Product.all
+      redirect_to root_path
     end
+
+    
   end
 
   # GET /products/1
@@ -22,8 +38,9 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    
+   
     @product = Product.new
+    
   end
 
   # GET /products/1/edit
@@ -33,7 +50,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
-    #byebug
+    
     @product = Product.new(product_params)
     @product.sellerId = current_user.id
 

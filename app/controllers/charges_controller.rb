@@ -1,6 +1,7 @@
 class ChargesController < ApplicationController
   def new
     
+   
     @amount = params[:price]
     @name = params[:name]
 

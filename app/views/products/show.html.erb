@@ -50,7 +50,7 @@
             <% else %>
               
               <button type="button" class="btn btn-success">
-                  <%= link_to "Buy Now", new_charge_path(product,price: product.price) %>
+                  <%= link_to "Buy Now", new_charge_path(@product,price: @product.price) %>
               </button>
             <% end %>
             </div>

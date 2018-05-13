@@ -2,7 +2,9 @@
 
 Completed as Project in [Coder Academy's](https://coderacademy.edu.au/) Fast Track Bootcamp.
 
-View live: https://toys-marketplace.herokuapp.com
+View live : https://staging-toys.herokuapp.com  (more picture )
+
+View live : https://toys-marketplace.herokuapp.com
 
 **Table of Contents**
   * [Problem Definition and Solution](#problem-definition-and-solution)
@@ -245,6 +247,9 @@ The original workflow was conceptualised in the diagram below. Some minor altera
 
 
 ![workflow](/readmedocs/flowchart.png)
+
+## code Review
+ Code review with sam but not in too much details due to time issues but had commented out some security flaws going to different routes.
 
 ## Style Guide
 
