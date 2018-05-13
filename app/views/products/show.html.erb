@@ -47,11 +47,14 @@
             <% if user_signed_in? and (@product.sellerId == current_user.id)%>
               <button type="button" class="btn btn-warning">
               <%= link_to 'Edit', edit_product_path(@product) %> </button>
-            <% else %>
-              
+            <% elsif user_signed_in?%>
               <button type="button" class="btn btn-success">
                   <%= link_to "Buy Now", new_charge_path(@product,price: @product.price) %>
               </button>
+            <% else %>
+              <button type="button" class="btn btn-success">
+                <%= link_to "Buy Now", new_user_session_path %>
+              </button></td>
             <% end %>
             </div>
 
@@ -64,7 +67,3 @@
   </div>
 
   
-
-
-
-
