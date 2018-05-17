@@ -21,6 +21,7 @@ View live : https://toys-marketplace.herokuapp.com
   * [Wireframes](#wireframes)
   * [ERD](#erd)
   * [Trello](#trello)
+  * [What my website does](#Marketplace)
   * [Whats Future](#future)
 
 ## Problem Definition and Solution
@@ -296,6 +297,17 @@ Images of different faces of project
 ![trello](readmedocs/trello1.png)
 ![trello](/readmedocs/trello2.png)
 ![trello](/readmedocs/trello3.png)
+
+## Marketplace
+  My two side marketplace is in the Beta version in making and currentl do Most of the function needed taking account regional numbers of user.
+  - Devise gem is perfectly working for authhentication and authorization purpose with full functionality of confirming email adress and reseting password. 
+  - User can choose multiple picture upload and able to view multiple picture.
+  - Perfectly sending email for conformation and resetting.
+  - Payment option is working.
+  - sorting can be done using different link button in navabar Search button in the navbar is currently not functioning.
+  - User can see without login but if user want to buy and sell / List product he have to login.
+  - perfectly work in any screen.
+ 
 
 ## future
 
