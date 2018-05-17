@@ -281,7 +281,7 @@ Wire Fraim was made using figma https://www.figma.com/file/BeAjfu1eRpS27Gpdzis3s
 
 It s belongs to and Has many relationship diagram
 
-![erd](/readmedocs/database.png)
+![erd](/readmedocs/Database.png)
 
 Erd designe in Db Designer 
 View https://www.dbdesigner.net/designer
